@@ -9,185 +9,237 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-    background:#061f16;
-    color:white;
+background:#061f16;
+color:white;
 }
 
-.hero{
-    min-height:100vh;
-    padding:40px 8%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background:
-    radial-gradient(circle,#164b35,#061f16);
-}
-
-.hero-text{
-    width:50%;
+nav{
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#04150f;
 }
 
 .logo{
-    font-size:22px;
-    color:#d9b85a;
-    font-weight:bold;
-    letter-spacing:2px;
+display:flex;
+align-items:center;
+gap:10px;
+color:#d9b85a;
+font-size:22px;
+font-weight:bold;
 }
 
-h1{
-    font-size:55px;
-    margin:25px 0;
-    letter-spacing:4px;
+.logo img{
+width:45px;
+height:45px;
+border-radius:50%;
 }
 
-.hero p{
-    font-size:18px;
-    line-height:1.8;
-    color:#ddd;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-size:14px;
 }
+
+.hero{
+
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding:40px 8%;
+background:
+linear-gradient(
+rgba(0,30,20,.7),
+rgba(0,30,20,.9)
+);
+
+}
+
+
+.hero-text{
+max-width:550px;
+}
+
+
+.hero-text h1{
+
+font-size:55px;
+line-height:1.1;
+color:white;
+
+}
+
+
+.hero-text span{
+
+color:#d9b85a;
+
+}
+
+
+.hero-text p{
+
+margin-top:20px;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+
+}
+
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    margin-right:10px;
-    padding:14px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    color:white;
-    background:#16805b;
+
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+border-radius:30px;
+background:#0b6848;
+color:white;
+text-decoration:none;
+margin-right:10px;
+
 }
 
-.btn:hover{
-    background:#d9b85a;
-    color:#111;
+
+.btn.gold{
+
+background:#d9b85a;
+color:#061f16;
+
 }
 
 
 .hero img{
-    width:330px;
-    height:330px;
-    object-fit:cover;
-    border-radius:50%;
-    border:5px solid #d9b85a;
+
+width:380px;
+height:380px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #d9b85a;
+
 }
 
 
-section{
-    padding:50px 8%;
+.section{
+
+padding:60px 8%;
+
 }
 
 
 .title{
-    text-align:center;
-    font-size:35px;
-    margin-bottom:35px;
-    color:#d9b85a;
+
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#d9b85a;
+
 }
 
 
-.card-box{
-    display:flex;
-    gap:25px;
-    flex-wrap:wrap;
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
 }
 
 
 .card{
-    background:#102d22;
-    padding:25px;
-    border-radius:20px;
-    flex:1;
-    min-width:250px;
+
+background:#0b3023;
+padding:25px;
+border-radius:20px;
+
+}
+
+
+.card img{
+
+width:100%;
+border-radius:15px;
+
 }
 
 
 .card h3{
-    color:#d9b85a;
-    margin-bottom:15px;
-}
 
-
-.card a{
-    color:white;
-    text-decoration:none;
-}
-
-
-.social a{
-    display:inline-block;
-    background:#16805b;
-    padding:12px 20px;
-    border-radius:25px;
-    margin:5px;
-}
-
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#03130e;
-    color:#aaa;
-}
-
-
-@media(max-width:768px){
-
-.hero{
-    flex-direction:column-reverse;
-    text-align:center;
-}
-
-.hero-text{
-    width:100%;
-}
-
-.hero img{
-    width:230px;
-    height:230px;
-    margin-bottom:30px;
-}
-
-h1{
-    font-size:38px;
-}
+margin:15px 0;
+color:#d9b85a;
 
 }
+
+
+.card p{
+
+color:#ddd;
+line-height:1.6;
+
+}
+
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<section class="hero">
-
-<div class="hero-text">
+<nav>
 
 <div class="logo">
-TR | TOFAZZAL RUMMAN
+
+<img src="FB_IMG_1784825266655.jpg">
+
+TOFAZZAL RUMMAN
+
 </div>
 
 
+<div>
+
+<a href="#">Home</a>
+<a href="#">Nasheeds</a>
+<a href="#">Videos</a>
+<a href="#">Lyrics</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+
 <h1>
-TOFAZZAL<br>
-RUMMAN
+Spreading the Message
+<br>
+of Peace through <span>Nasheed</span>
 </h1>
 
 
 <p>
-This is an effort in Islamic music.
-<br><br>
-Welcome to my official website.
-Here you will find my nasheeds,
-videos and personal updates.
+Islamic Nasheed is not just a song,
+it's a way to connect with Allah.
 </p>
 
 
@@ -196,160 +248,180 @@ Listen Now
 </a>
 
 
-<a class="btn" href="https://youtu.be/Lm5HWRKp77g">
-Watch Latest Nasheed
+<a class="btn gold" href="https://youtu.be/Lm5HWRKp77g">
+Watch Latest
 </a>
 
 
 </div>
 
 
-<img src="FB_IMG_1784826256665.jpg" alt="Tofazzal Rumman">
+
+<img src="FB_IMG_1784825266655.jpg">
 
 
-</section> 
+</section>
 
-  <!-- Latest Nasheed -->
 
-<section>
+<section class="section">
 
-<h2 class="title">Latest Nasheed</h2>
+<h2 class="title">
+Latest Nasheed & Video
+</h2>
 
-<div class="card-box">
+
+<div class="cards">
+
 
 <div class="card">
 
-<h3>Tumar Name</h3>
+<img src="FB_IMG_1784825266655.jpg">
+
+<h3>
+Tumar Name
+</h3>
 
 <p>
-Latest Islamic Nasheed by Tofazzal Rumman
+Tofazzal Rumman & Jahangir Jaigirdar
 </p>
 
-<br>
+</div>
 
-<a href="https://open.spotify.com/album/2QXlIaF037hczSj4seVvwQ">
+
+
+<div class="card">
+
+<img src="FB_IMG_1784825266655.jpg">
+
+<h3>
+Tumi Noor Nabi
+</h3>
+
+<p>
+Official Nasheed Video
+</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+<section class="section">
+
+
+<h2 class="title">
+Audio & Lyrics
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🎵 Audio Releases</h3>
+
+<p>
+Tumar Name
+</p>
+
+<p>
+Tumi Noor Nabi
+</p>
+
+<p>
+Latest Islamic Nasheeds
+</p>
+
+
+<a class="btn" href="https://open.spotify.com/album/2QXlIaF037hczSj4seVvwQ">
 Listen on Spotify
 </a>
 
+
 </div>
+
+
 
 
 <div class="card">
 
-<h3>Tumi Noor Nabi</h3>
+
+<h3>📖 Lyrics</h3>
+
 
 <p>
-Official Latest Nasheed Video
+Read the lyrics and meaning behind
+the Islamic Nasheeds.
 </p>
 
-<br>
-
-<a href="https://youtu.be/Lm5HWRKp77g">
-Watch Video
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Audio Section -->
-
-<section>
-
-<h2 class="title">Audio</h2>
-
-<div class="card">
 
 <p>
-🎵 Tumar Name
-<br>
-🎵 Tumi Noor Nabi
-<br>
-🎵 Future Nasheeds
+• Tumar Name Lyrics</p>
+
+<p>
+• Tumi Noor Nabi Lyrics
 </p>
 
-</div>
-
-</section>
-
-
-
-
-<!-- Lyrics Section -->
-
-<section>
-
-<h2 class="title">Lyrics</h2>
-
-<div class="card">
-
-<p>
-Read lyrics of Islamic Nasheeds and explore the message behind every song.
-</p>
 
 </div>
 
-</section>
-
-
-
-
-<!-- Available On -->
-
-<section>
-
-<h2 class="title">Available On</h2>
-
-
-<div class="social">
-
-
-<a href="https://open.spotify.com/user/31ybbtqn7vw6dza35o7n7e3jypkm">
-Spotify
-</a>
-
-
-<a href="https://music.youtube.com">
-YouTube Music
-</a>
-
-
-<a href="https://www.youtube.com/@tofazzal_rumman">
-YouTube
-</a>
-
-
-<a href="https://music.apple.com">
-Apple Music
-</a>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- About -->
-
-<section>
-
-<h2 class="title">About Tofazzal Rumman</h2>
 
 
 <div class="card">
 
+
+<h3>🌐 Available On</h3>
+
+
+<p>Spotify</p>
+
+<p>YouTube Music</p>
+
+<p>Apple Music</p>
+
+<p>YouTube</p>
+
+<p>Amazon Music</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="section">
+
+
+<h2 class="title">
+About Tofazzal Rumman
+</h2>
+
+
+<div class="card">
+
+
 <p>
 
-Tofazzal Rumman is an Islamic Nasheed artist.
-Through music and lyrics, he shares messages of peace,
+This is an effort in Islamic music.
+
+Welcome to my official website.
+
+Here you will find my nasheeds,
+videos and personal updates.
+
+Through Islamic Nasheed,
+I try to share messages of peace,
 love and spirituality.
 
 </p>
@@ -364,55 +436,153 @@ love and spirituality.
 
 
 
-<!-- Stay Connected -->
+<section class="section">
 
-
-<section>
 
 <h2 class="title">
 Stay Connected
 </h2>
 
 
-<div class="social">
+
+<div style="text-align:center;">
 
 
-<a href="https://www.facebook.com/share/1cjumHhuev/">
+<a class="btn" href="https://youtube.com/@tofazzal_rumman">
+YouTube
+</a>
+
+
+
+<a class="btn" href="https://www.facebook.com/share/1cjumHhuev/">
 Facebook
 </a>
 
 
-<a href="https://www.instagram.com/tofazzal_rumman">
+
+<a class="btn" href="https://www.instagram.com/tofazzal_rumman">
 Instagram
 </a>
 
 
-<a href="https://www.tiktok.com/@tofazzal.rumman">
+
+<a class="btn" href="https://www.tiktok.com/@tofazzal.rumman">
 TikTok
 </a>
 
 
-<a href="https://x.com/TofazzalRumman">
+
+<a class="btn" href="https://x.com/TofazzalRumman">
 X
 </a>
+
 
 
 </div>
 
 
-</section>
-
-
-
+</section> 
 
 
 <footer>
 
+<p>
 © 2026 Tofazzal Rumman. All Rights Reserved.
+</p>
+
+<p>
+Official Islamic Nasheed Artist Website
+</p>
 
 </footer>
 
 
 
+<style>
+
+footer{
+
+background:#03100b;
+padding:40px;
+text-align:center;
+color:#aaa;
+line-height:2;
+
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:800px){
+
+
+nav{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+
+nav div{
+
+text-align:center;
+
+}
+
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+
+.hero img{
+
+width:260px;
+height:260px;
+margin-top:35px;
+
+}
+
+
+.hero-text h1{
+
+font-size:36px;
+
+}
+
+
+.btn{
+
+margin-top:15px;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+.title{
+
+font-size:28px;
+
+}
+
+
+}
+
+
+</style>
+
+
+
 </body>
-</html>
+
+</html> 
